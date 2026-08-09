@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Rulealize.Abstraction" Version="0.1.0" />
+    <PackageReference Include="Rulealize.Abstraction" Version="0.3.0" />
   </ItemGroup>
 
 </Project>

@@ -55,8 +55,9 @@ are `rec.at` and `rec.set` — and this plugin treats the field as one opaque va
 
 **This is the seam the decomposition turns on.** If State knew a board's internal
 representation — sparse or dense, which coordinate notation — Grid could no longer be
-replaced. [Record](https://github.com/reny-develop/Rulealize.Plugin.Record/blob/main/doc/specification.md) follows the same seam deliberately, and
-[collections](https://github.com/reny-develop/Rulealize/blob/main/doc/collections.md) is where the choice is argued out.
+replaced. [Record](https://github.com/reny-develop/Rulealize.Plugin.Record/blob/main/doc/specification.md) follows the same seam deliberately: accepting
+`"hand.P"` would give up all three of the reasons above, so a path names the whole field
+and the inside is touched with the vocabulary of the plugin that defined it.
 
 There is no dotted syntax and none is reserved. An earlier version of this document
 reserved one against future nested schemas, which was written before records existed;
@@ -255,7 +256,7 @@ state written by hand has no reason to be forced into one.
   [TypeSchema](https://github.com/reny-develop/Rulealize.Plugin.TypeSchema/blob/main/doc/specification.md) for why the objection to it did not hold up.
 - **Paths do not nest, and no nesting syntax is reserved.** Recorded above.
 - **No delta representation for states.** `ApplyToState` returns the whole state. A long
-  game accumulating states would rather have diffs, and none of the five rule sets
+  game accumulating states would rather have diffs, and none of the rule sets written so far
   accumulates states — the one with a history, roster, bounds it at five entries and
   truncates. Worth revisiting when a rule set stores its own history unbounded, which the
   `maxLength` argument in [TypeSchema](https://github.com/reny-develop/Rulealize.Plugin.TypeSchema/blob/main/doc/specification.md) suggests should not happen.

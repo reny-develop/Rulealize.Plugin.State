@@ -19,7 +19,7 @@ namespace Rulealize.Plugin.State
     /// one wins.
     /// </para>
     /// <para>
-    /// Othello's placement effects end with <c>{ "path": "turn", "value": "#opponent" }</c>,
+    /// Reversi's placement effects end with <c>{ "path": "turn", "value": "#opponent" }</c>,
     /// where the opponent is derived from whose turn it is. Snapshot semantics are what make
     /// that mean the mover's opponent regardless of what any earlier effect did.
     /// </para>

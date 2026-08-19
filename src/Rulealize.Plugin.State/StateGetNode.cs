@@ -14,7 +14,7 @@ namespace Rulealize.Plugin.State
     /// <para>
     /// Always the snapshot — the state as it stood when the input was applied. Inside an
     /// input's effects this does not see what earlier effects in the same array wrote,
-    /// which is what lets Othello's pass counter be written as
+    /// which is what lets Reversi's pass counter be written as
     /// <c>{ "op": "math.add", "of": ["$passes", 1] }</c> without caring where in the array
     /// it sits.
     /// </para>

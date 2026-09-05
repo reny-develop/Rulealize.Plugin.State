@@ -14,7 +14,7 @@
 
   <PropertyGroup>
     <PackageId>Rulealize.Plugin.State</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Reny</Authors>
     <Description>Reading and writing a Rulealize rule set's state: state.get (the $ shorthand), state.set and state.update.</Description>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Rulealize.Abstraction" Version="0.3.0" />
+    <PackageReference Include="Rulealize.Abstraction" Version="0.4.0" />
   </ItemGroup>
 
 </Project>

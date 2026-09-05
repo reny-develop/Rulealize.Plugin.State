@@ -25,7 +25,7 @@ namespace Rulealize.Plugin.State
     {
         /// <inheritdoc />
         public PluginManifest Manifest { get; } =
-            new("Rulealize.Plugin.State", new Version(1, 0, 0), "state", '$');
+            new("Rulealize.Plugin.State", new Version(1, 0, 1), "state", '$');
 
         /// <inheritdoc />
         public void Register(IPluginRegistry registry)
